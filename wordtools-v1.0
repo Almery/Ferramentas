@@ -12,7 +12,7 @@
 palavras = []
 i = 1
 print("# Digite o valor de combinações para realizar")
-print("# embaralhamento dos valores a seguir.")
+print("# o embaralhamento dos valores a seguir.")
 combina = int(input("Quantas combinações: "))
 while i <= combina:
   palavras.append(str(input("Informe o %sº valor: " %i)))

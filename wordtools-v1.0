@@ -9,6 +9,8 @@
 #                                                             #
 ###############################################################
 
+# Python 3.5.x
+
 palavras = []
 i = 1
 print("# Digite o valor de combinações para realizar")

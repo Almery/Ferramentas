@@ -1,0 +1,32 @@
+###############################################################
+#                                                             #
+#   Com essa ferramenta você poderá realizar a criação        #
+#   de Wordlist focada nas informações coletadas do seu       #
+#   alvo, esta versão ainda encontra-se em desenvolvimento.   #
+#   Tool version: 1.0                                         #
+#                                                             #
+#   Contato e sugestões: almery.jp@gmail.com                  #
+###############################################################
+
+palavras = []
+i = 1
+print("# Digite o valor de combinações para realizar")
+print("# embaralhamento dos valores a seguir.")
+combina = int(input("Quantas combinações: "))
+while i <= combina:
+  palavras.append(str(input("Informe o %sº valor: " %i)))
+  i += 1
+
+v1 = 1
+v2 = 2
+v3 = 3
+v4 = 4
+import itertools
+for resultado in itertools.product(palavras, repeat=v1):
+  print (''.join(resultado))
+for resultado in itertools.product(palavras, repeat=v2):
+  print (''.join(resultado))
+for resultado in itertools.product(palavras, repeat=v3):
+  print (''.join(resultado))
+for resultado in itertools.product(palavras, repeat=v4):
+  print (''.join(resultado))

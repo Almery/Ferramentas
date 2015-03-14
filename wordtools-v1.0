@@ -3,9 +3,10 @@
 #   Com essa ferramenta você poderá realizar a criação        #
 #   de Wordlist focada nas informações coletadas do seu       #
 #   alvo, esta versão ainda encontra-se em desenvolvimento.   #
-#   Tool version: 1.0                                         #
+#   WordTool Version: 1.0                                     #
 #                                                             #
 #   Contato e sugestões: almery.jp@gmail.com                  #
+#                                                             #
 ###############################################################
 
 palavras = []

@@ -3,7 +3,7 @@
 #   Com essa ferramenta você poderá realizar a criação        #
 #   de Wordlist focada nas informações coletadas do seu       #
 #   alvo, esta versão ainda encontra-se em desenvolvimento.   #
-#   WordTool Version: 1.1                                     #
+#   WordTool Version: 1.2                                     #
 #                                                             #
 #   Contato e sugestões: almery.jp@gmail.com                  #
 #                                                             #
@@ -21,12 +21,27 @@ while i <= combina:
   i += 1
   
 import itertools
-for resultado in itertools.product(palavras, repeat=1):
-  print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=2):
-  print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=3):
-  print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=4):
-  print (''.join(resultado))
-
+if combina == 1:
+  for resultado in itertools.product(palavras, repeat=1):
+    print (''.join(resultado))
+elif combina == 2:
+  for resultado in itertools.product(palavras, repeat=1):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=2):
+    print (''.join(resultado))
+elif combina == 3:
+  for resultado in itertools.product(palavras, repeat=1):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=2):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=3):
+    print (''.join(resultado))
+elif combina == 4:
+  for resultado in itertools.product(palavras, repeat=1):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=2):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=3):
+    print (''.join(resultado))
+  for resultado in itertools.product(palavras, repeat=4):
+    print (''.join(resultado))

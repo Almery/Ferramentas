@@ -19,17 +19,14 @@ combina = int(input("Quantas combinações: "))
 while i <= combina:
   palavras.append(str(input("Informe o %sº valor: " %i)))
   i += 1
-
-v1 = 1
-v2 = 2
-v3 = 3
-v4 = 4
+  
 import itertools
-for resultado in itertools.product(palavras, repeat=v1):
+for resultado in itertools.product(palavras, repeat=1):
   print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=v2):
+for resultado in itertools.product(palavras, repeat=2):
   print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=v3):
+for resultado in itertools.product(palavras, repeat=3):
   print (''.join(resultado))
-for resultado in itertools.product(palavras, repeat=v4):
+for resultado in itertools.product(palavras, repeat=4):
   print (''.join(resultado))
+
